@@ -1,0 +1,47 @@
+body{
+    /*background-color: #88BDBC;*/
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+p{
+    font-family: Roboto;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.Home{
+    padding: 10px;
+    /*background-color: #88BDBC*/
+}
+
+.Skills{
+    text-align: center;
+}
+
+.About{
+    padding: 10px;
+}
+
+.Contact{
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+h6{
+    text-align: center;
+}
+
+footer{
+    /*position: fixed;*/
+    text-align: center;
+    background-color: #777;
+    padding: 10px;
+}
+
