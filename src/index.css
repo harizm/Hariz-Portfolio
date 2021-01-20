@@ -1,5 +1,12 @@
 body{
-    /*background-color: #88BDBC;*/
+    background-color: #88BDBC;
+}
+
+/*.header{*/
+/*    padding-bottom: 10px;*/
+/*}*/
+.Content{
+    background-color: #88BDBC;
 }
 
 h1 {
@@ -13,7 +20,12 @@ p{
     font-size: 1.2rem;
 }
 
+.nav-link{
+    font-size: 2em;
+}
+
 .Home{
+    margin-top: 30px;
     padding: 10px;
     /*background-color: #88BDBC*/
 }
@@ -43,5 +55,30 @@ footer{
     text-align: center;
     background-color: #777;
     padding: 10px;
+}
+
+.greetings{
+    text-align: left;
+}
+
+.home{
+    font-size: 2em;
+}
+
+#hariz_profile{
+    border-radius: 50%;
+    width: 20em;
+    height: 20em;
+
+    /*to make image center*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
 }
 

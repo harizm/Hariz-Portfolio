@@ -14,11 +14,14 @@
 
 <div class="header">
 <!--    <img src="hariz_logo.png" alt="Hariz Web Icon">-->
-    <nav class = "navbar navbar-expand-sm navbar-fixed-top  bg-light justify-content-start">
+    <nav class = "navbar fixed-top navbar-expand-sm bg-light">
 <!--        need to make navigation bar fixed top using css-->
-
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <img class="navbar-brand" src="../img/hariz_logo.png" alt="Hariz Web Icon" height="100" width="100">
+        </div>
         <ul class="navbar-nav">
-            <img src="../img/hariz_logo.png" alt="Hariz Web Icon" height="100" width="100">
+            <li class="nav-item">
                 <a class = "nav-link" href="#Home">Home</a>
             </li>
 
@@ -34,21 +37,27 @@
                 <a class = "nav-link" href="#Contact">Contact</a>
             </li>
         </ul>
+    </div>
 
     </nav>
 </div>
 
 <div class = "Home">
-    <h1>Home</h1>
-    <p>Hi, there! I'm Hariz from Malaysia, and I am a fresh graduate who has completed Bachelor of Software Engineering</p>
-    <h1>Some text</h1>
+<!--    find out why home content is overlapped by navigation bar-->
+<!--    difference between section and div -->
+<!--    <h1 class="greetings">Hi, I'm Hariz!</h1>-->
+    <h1>Hi, I'm Hariz!</h1>
+    <img id="hariz_profile"   src="../img/hariz_profile_pic.jpeg" alt="Hariz Profile Pic">
+<!--    <h1>Hi, I'm Hariz!</h1>-->
+    <p class="home">Bachelor of Software Engineering Graduate</p>
+    <p class="home">I am passionate to work as web developer</p>
 </div>
 
 <hr>
 
 <div class = "About">
     <h1>About</h1>
-    <p>I have completed my internship course in Hilti as a cloud developer intern. I have exposed front end and back end technologies</p>
+    <p>I have completed my internship course in Hilti as a cloud developer intern for about 6 months. I have an Angular application for the company using front end and back end technologies</p>
     <h1>Some text</h1>
 </div>
 
