@@ -7,6 +7,7 @@ body{
 /*}*/
 .Content{
     background-color: #88BDBC;
+    padding-top: 118px;
 }
 
 h1 {
@@ -49,6 +50,7 @@ h1{
 h6{
     text-align: center;
 }
+
 
 footer{
     /*position: fixed;*/
