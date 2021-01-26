@@ -2,6 +2,11 @@ body{
     background-color: #88BDBC;
 }
 
+html{
+    scroll-behavior: smooth;
+    /*this is to make smooth scrolling effect when clicking certain navigation link*/
+}
+
 /*.header{*/
 /*    padding-bottom: 10px;*/
 /*}*/
@@ -27,20 +32,38 @@ p{
 
 .Home{
     margin-top: 30px;
-    padding: 10px;
+    padding: 1em;
+
+
+
+
     /*background-color: #88BDBC*/
+}
+
+.Intro{
+    margin: 0 auto;
+
+    /*overflow: auto makes sures the div follows the size of the image */
+    overflow: auto;
 }
 
 .Skills{
     text-align: center;
+    padding: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
 }
 
 .About{
-    padding: 10px;
+    padding: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .Contact{
-    padding: 10px;
+    padding: 1.5em;
+    margin-top: 2em;
 }
 
 h1{
@@ -59,12 +82,13 @@ footer{
     padding: 10px;
 }
 
-.greetings{
+.welcome_note{
     text-align: left;
 }
 
 .home{
     font-size: 2em;
+    text-align: left;
 }
 
 #hariz_profile{
@@ -79,8 +103,33 @@ footer{
 
 }
 
+#hariz_proImage{
+    /*this is to make the image center*/
+    /*display: block;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    float: right;
+    /*to have rounded corners for rectangular image*/
+    border-radius: 15px;
+    border: 10px solid black;
+
+    /*how to make image to be at the right, but inside div*/
+
+
+
+}
+
 .navbar-nav > li{
     padding-left:30px;
     padding-right:30px;
 }
 
+
+.greetings{
+    width: 50%;
+    float:left;
+}
+
+.user_profile{
+    margin-left:50%
+}
