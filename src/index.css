@@ -22,12 +22,12 @@ h1 {
 
 p{
     font-family: Roboto;
-    text-align: center;
+    /*text-align: center;*/
     font-size: 1.2rem;
 }
 
 .nav-link{
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .Home{
@@ -133,3 +133,4 @@ footer{
 .user_profile{
     margin-left:50%
 }
+
