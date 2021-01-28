@@ -61,6 +61,11 @@ p{
     margin-bottom: 2em;
 }
 
+.about_me{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 .Contact{
     padding: 1.5em;
     margin-top: 2em;
