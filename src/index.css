@@ -22,8 +22,30 @@ h1 {
     text-align: center;
 }
 
+
+/* this is to style h1 tag for each page section*/
+/*.header_section{*/
+/*    font-family: 'Lato', sans-serif;*/
+/*    text-align: center;*/
+/*    background-color: #909090;*/
+/*    padding: 20px 40px;*/
+/*}*/
+
+.headers{
+    border-top: 5px solid blue;
+    width: 50%;
+}
+
 h6{
     text-align: center;
+}
+
+h6.skill-title{
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.28rem ;
 }
 
 
@@ -116,10 +138,67 @@ p{
 }
 
 
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px;
+    grid-column-gap: 50px;
+}
+
+.item{
+    background: #FFFFFF;
+}
+
+
+.skill-content{
+    padding: 20px;
+    /*border-radius: 0 0 2px 2px;*/
+}
+div.skill_images{
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+}
+
+.caption{
+    display: block;
+}
+
 
 .Contact{
-    padding: 1.5em;
+    text-align: center;
+    padding: 1.5em 8.5em;
     margin-top: 2em;
+}
+
+.contact-linkedin > * {
+    float: left;
+    margin-right:5px;
+}
+
+.contact-gmail > * {
+    float: right;
+    margin-right: 5px;
+}
+
+.contact-desc{
+    font-size: 1.5em;
+}
+
+.column {
+    /*float: left;*/
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    /*height: 100px;*/
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 
