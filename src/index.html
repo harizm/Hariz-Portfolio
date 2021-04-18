@@ -12,7 +12,7 @@
 </head>
 <body>
 
-        <nav class = "navbar fixed-top navbar-expand-sm bg-light">
+        <nav class = "navbar fixed-top navbar-expand-sm bg-primary">
 <!--            how to make navigation link to jump to certain div section-->
 <!--            1. make the link href to be the same name as div name-->
 
@@ -36,6 +36,17 @@
                     <li class="nav-item">
                         <a class = "nav-link" href="#Experience">Experience</a>
                     </li>
+
+<!--                    <li class="dropdown">-->
+<!--                        <a class="dropdown-toggle"  data-toggle = "dropdown" href="#Skills">Skills-->
+<!--                            <span class="caret"></span>-->
+<!--                        </a>-->
+<!--                            <ul class="dropdown-menu">-->
+<!--                                <li><a href="#">Programming</a></li>-->
+<!--                                <li><a href="#">Non Programming</a></li>-->
+<!--                            </ul>-->
+<!--                    </li>-->
+
 
                     <li class="nav-item">
                         <a class = "nav-link" href="#Skills">Skills</a>
@@ -76,7 +87,6 @@
         </div>
     </div>
 
-    <hr>
 
     <div class = "About" id="About">
         <h1>About</h1>
@@ -108,7 +118,7 @@
 
     </div>
 
-    <hr>
+
 
     <div class="Experience" id="Experience">
         <h1>Experience</h1>
@@ -155,14 +165,14 @@
 
     </div>
 
-    <hr>
+
 
     <div class="Education" id="Education">
         <h1>Education</h1>
         <hr class="headers">
             <div class="timeline">
                 <div class="education_container left">
-                    <div class="content">
+                    <div class="education_content">
                         <h2>TAYLOR'S UNIVERSITY LAKESIDE CAMPUS (BACHELOR OF SOFTWARE ENGINEERING</h2>
                         <h4>August 2017 - August 2020</h4>
                   <hr>
@@ -173,7 +183,7 @@
                 </div>
 
                 <div class="education_container right">
-                    <div class="content">
+                    <div class="education_content">
                         <h2>TAYLOR'S UNIVERSITY LAKESIDE CAMPUS (FOUNDATION IN COMPUTING) </h2>
                         <h4>August 2016 – July 2017</h4>
               <hr>
@@ -183,7 +193,7 @@
                 </div>
 
                 <div class="education_container left">
-                    <div class="content">
+                    <div class="education_content">
                         <h2>S.M.K SULTAN ABDUL SAMAD</h2>
                         <h4>2012 - 2016</h4>
                         <hr>
@@ -196,31 +206,23 @@
     </div>
 
 
-    <hr>
+
     <div class = "Skills" id="Skills">
         <h1>Skills</h1>
         <hr class="headers">
 
+
+<!--        insert div box to have card effects for skill category-->
+
 <!--        use CSS grid to have front end div and back end div side by side-->
 <!--        get free icons for the skill sets-->
 
-        <h6>1. Programming</h6>
+<!--        <h6 class="skills-header">1. Programming</h6>-->
+<!--        <img src="../img/web-programming.png" alt="Programming" height="100" width="100">-->
 
-        <br>
-
-        <div class="container">
-            <div class="item">
-                <div class="skill-content">
-                    <h6 class="skill-title">A) Front-End Development</h6>
-                </div>
-
-
-<!--                <img src="../img/angular-icon.svg" alt="Angular" height="100" width="100">-->
-<!--                <img src="../img/html_5_icon.png" alt="Html 5" height="100" width="100">-->
-<!--                <img src="../img/css3_logo.png" alt="CSS 3" height="100" width = "100">-->
-<!--                <img src="../img/javascript_logo.svg" alt="JavaScript" height="100" width="100">-->
-
-
+        <div class="row">
+            <div class="column" style="background-color:#aaa;">
+                <h2>Programming</h2>
                 <div class="skill_images">
                     <img src="../img/html5.png" alt="Html 5" height="100" width="100">
                     <span class="caption">HTML</span>
@@ -242,67 +244,26 @@
                 </div>
 
 
-
-
-<!--                <figure style = "float: left">-->
-<!--                    <img src="../img/html5.png" alt="Html 5" height="100" width="100">-->
-<!--                    <figcaption>HTML</figcaption>-->
-<!--                </figure>-->
-
-<!--                <figure style = "float: left">-->
-<!--                    <img src="../img/css-3.png" alt="CSS" height="100" width="100">-->
-<!--                    <figcaption>CSS</figcaption>-->
-<!--                </figure>-->
-
-<!--                <figure style = "float: left">-->
-<!--                    <img src="../img/iconfinder_angular_1145600.png" alt="Angular" height="100" width="100">-->
-<!--                    <figcaption>Angular</figcaption>-->
-<!--                </figure>-->
-
-
-
-            </div>
-
-            <div class="item">
-
-                <div class="skill-content">
-                    <h6 class="skill-title">B) Back-End Development</h6>
-                </div>
-
-
-<!--                <img src="../img/postgres_logo.png" alt="PostGres" height="100" width="100">-->
-<!--                <img src="../img/postman_logo.png" alt="Postman" height="100" width="100">-->
-<!--                <img src="../img/java_logo.svg" alt="Java" height="100" width="100">-->
-
                 <div class="skill_images">
                     <img src="../img/iconfinder_181_Java_logo_logos_4373217.png" alt="Java" height="100" width="100">
                     <span class="caption">Java</span>
                 </div>
 
-<!--                <figure style = "float: left">-->
-<!--                    <img src="../img/iconfinder_181_Java_logo_logos_4373217.png" alt="Java" height="100" width="100">-->
-<!--                    <figcaption>Java</figcaption>-->
-<!--                </figure>-->
+
 
                 <div class="skill_images">
                     <img src="../img/iconfinder_postman_4691397.png" alt="Postman" height="100" width="100">
                     <span class="caption">Postman</span>
                 </div>
 
-<!--                <figure style = "float: left">-->
-<!--                    <img src="../img/iconfinder_postman_4691397.png" alt="Postman" height="100" width="100">-->
-<!--                    <figcaption>Postman</figcaption>-->
-<!--                </figure>-->
+
 
                 <div class="skill_images">
                     <img src="../img/iconfinder_MySQL_1012821.png" alt="MySQL" height="100" width="100">
                     <span class="caption">MySQL</span>
                 </div>
 
-<!--                <figure style = "float: left">-->
-<!--                    <img src="../img/iconfinder_MySQL_1012821.png" alt="Html 5" height="100" width="100">-->
-<!--                    <figcaption>MySQL</figcaption>-->
-<!--                </figure>-->
+
 
                 <div class="skill_images">
                     <img src="../img/php.png" alt="PHP" height="100" width="100">
@@ -310,67 +271,253 @@
                 </div>
 
             </div>
+            <div class="column" style="background-color:#bbb;">
+                <h2>Non-Programming</h2>
+                <div class="skill_images">
+                    <img src="../img/iconfinder_logo_brand_brands_logos_word_2993664.png" alt="MS Word" height="100" width="100">
+                    <span class="caption">MS Word</span>
+                </div>
+
+                <div class="skill_images">
+                    <img src="../img/iconfinder_265_Powerpoint_logo_4375048.png" alt="MS Powerpoint" height="100" width="100">
+                    <span class="caption">MS Powerpoint</span>
+                </div>
+
+                <div class="skill_images">
+                    <img src="../img/iconfinder_logo_brand_brands_logos_excel_2993694.png" alt="MS Excel" height="100" width="100">
+                    <span class="caption">MS Excel</span>
+                </div>
+
+                <div class="skill_images">
+                    <img src="../img/iconfinder_7_docs_document_file_data_google_docs_2109135.png" alt="Google Docs" height="100" width="100">
+                    <span class="caption">Google Docs</span>
+                </div>
+
+                <div class="skill_images">
+                    <img src="../img/iconfinder_9_sheet_data_spreadsheets_file_google_sheets_2109137.png" alt="Google Sheets" height="100" width="100">
+                    <span class="caption">Google Sheets</span>
+                </div>
+
+                <div class="skill_images">
+                    <img src="../img/iconfinder_logo_brand_brands_logos_google_slides_2993687.png" alt="Google Slides" height="100" width="100">
+                    <span class="caption">Google Slides</span>
+                </div>
+
+                <div class="skill_images">
+                    <img src="../img/iconfinder_Premiere_pro_2529523.png" alt="Adobe Premiere Pro" height="100" width="100">
+                    <span class="caption">Adobe Premiere Pro</span>
+                </div>
+
+
+
+                <div class="skill_images">
+                    <img src="../img/iconfinder_184_Jira_logo_logos_4373216.png" alt="Jira" height="100" width="100">
+                    <span class="caption">Jira</span>
+                </div>
+
+                <div class="skill_images">
+                    <img src="../img/web_designing_%20icon.png" alt="Jira" height="100" width="100">
+                    <span class="caption">Web Designing</span>
+                </div>
+
+
+            </div>
         </div>
+
+
 
         <br>
-        <h6>2. Office Apps</h6>
 
-        <div class="skill_images">
-            <img src="../img/iconfinder_logo_brand_brands_logos_word_2993664.png" alt="MS Word" height="100" width="100">
-            <span class="caption">MS Word</span>
-        </div>
-
-        <div class="skill_images">
-            <img src="../img/iconfinder_265_Powerpoint_logo_4375048.png" alt="MS Powerpoint" height="100" width="100">
-            <span class="caption">MS Powerpoint</span>
-        </div>
-
-        <div class="skill_images">
-            <img src="../img/iconfinder_logo_brand_brands_logos_excel_2993694.png" alt="MS Excel" height="100" width="100">
-            <span class="caption">MS Excel</span>
-        </div>
-
-        <div class="skill_images">
-            <img src="../img/iconfinder_7_docs_document_file_data_google_docs_2109135.png" alt="Google Docs" height="100" width="100">
-            <span class="caption">Google Docs</span>
-        </div>
-
-        <div class="skill_images">
-            <img src="../img/iconfinder_9_sheet_data_spreadsheets_file_google_sheets_2109137.png" alt="Google Sheets" height="100" width="100">
-            <span class="caption">Google Sheets</span>
-        </div>
-
-        <div class="skill_images">
-            <img src="../img/iconfinder_logo_brand_brands_logos_google_slides_2993687.png" alt="Google Slides" height="100" width="100">
-            <span class="caption">Google Slides</span>
-        </div>
+<!--        <div class="skill_container">-->
+<!--            <div class="skill_section">-->
+<!--                <h1>Programming</h1>-->
+<!--                <br>-->
+<!--                <br>-->
+<!--                <div class="container">-->
+<!--                    <div class="item">-->
+<!--                        <div class="skill-content">-->
+<!--                            <h6 class="skill-title">A) Front-End Development</h6>-->
+<!--                        </div>-->
 
 
+<!--                        &lt;!&ndash;                <img src="../img/angular-icon.svg" alt="Angular" height="100" width="100">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                <img src="../img/html_5_icon.png" alt="Html 5" height="100" width="100">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                <img src="../img/css3_logo.png" alt="CSS 3" height="100" width = "100">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                <img src="../img/javascript_logo.svg" alt="JavaScript" height="100" width="100">&ndash;&gt;-->
+
+
+<!--                        <div class="skill_images">-->
+<!--                            <img src="../img/html5.png" alt="Html 5" height="100" width="100">-->
+<!--                            <span class="caption">HTML</span>-->
+<!--                        </div>-->
+
+<!--                        <div class="skill_images">-->
+<!--                            <img src="../img/css-3.png" alt="CSS" height="100" width="100">-->
+<!--                            <span class="caption">CSS</span>-->
+<!--                        </div>-->
+
+<!--                        <div class="skill_images">-->
+<!--                            <img src="../img/javascript.png" alt="JavaScript" height="100" width="100">-->
+<!--                            <span class="caption">JavaScript</span>-->
+<!--                        </div>-->
+
+<!--                        <div class="skill_images">-->
+<!--                            <img src="../img/iconfinder_angular_1145600.png" alt="Angular" height="100" width="100">-->
+<!--                            <span class="caption">Angular</span>-->
+<!--                        </div>-->
+
+
+
+
+<!--                        &lt;!&ndash;                <figure style = "float: left">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                    <img src="../img/html5.png" alt="Html 5" height="100" width="100">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                    <figcaption>HTML</figcaption>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                </figure>&ndash;&gt;-->
+
+<!--                        &lt;!&ndash;                <figure style = "float: left">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                    <img src="../img/css-3.png" alt="CSS" height="100" width="100">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                    <figcaption>CSS</figcaption>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                </figure>&ndash;&gt;-->
+
+<!--                        &lt;!&ndash;                <figure style = "float: left">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                    <img src="../img/iconfinder_angular_1145600.png" alt="Angular" height="100" width="100">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                    <figcaption>Angular</figcaption>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                </figure>&ndash;&gt;-->
+
+
+
+<!--                    </div>-->
+
+<!--                    <div class="item">-->
+
+<!--                        <div class="skill-content">-->
+<!--                            <h6 class="skill-title">B) Back-End Development</h6>-->
+<!--                        </div>-->
+
+
+<!--                        &lt;!&ndash;                <img src="../img/postgres_logo.png" alt="PostGres" height="100" width="100">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                <img src="../img/postman_logo.png" alt="Postman" height="100" width="100">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                <img src="../img/java_logo.svg" alt="Java" height="100" width="100">&ndash;&gt;-->
+
+<!--                        <div class="skill_images">-->
+<!--                            <img src="../img/iconfinder_181_Java_logo_logos_4373217.png" alt="Java" height="100" width="100">-->
+<!--                            <span class="caption">Java</span>-->
+<!--                        </div>-->
+
+<!--                        &lt;!&ndash;                <figure style = "float: left">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                    <img src="../img/iconfinder_181_Java_logo_logos_4373217.png" alt="Java" height="100" width="100">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                    <figcaption>Java</figcaption>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                </figure>&ndash;&gt;-->
+
+<!--                        <div class="skill_images">-->
+<!--                            <img src="../img/iconfinder_postman_4691397.png" alt="Postman" height="100" width="100">-->
+<!--                            <span class="caption">Postman</span>-->
+<!--                        </div>-->
+
+<!--                        &lt;!&ndash;                <figure style = "float: left">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                    <img src="../img/iconfinder_postman_4691397.png" alt="Postman" height="100" width="100">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                    <figcaption>Postman</figcaption>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                </figure>&ndash;&gt;-->
+
+<!--                        <div class="skill_images">-->
+<!--                            <img src="../img/iconfinder_MySQL_1012821.png" alt="MySQL" height="100" width="100">-->
+<!--                            <span class="caption">MySQL</span>-->
+<!--                        </div>-->
+
+<!--                        &lt;!&ndash;                <figure style = "float: left">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                    <img src="../img/iconfinder_MySQL_1012821.png" alt="Html 5" height="100" width="100">&ndash;&gt;-->
+<!--                        &lt;!&ndash;                    <figcaption>MySQL</figcaption>&ndash;&gt;-->
+<!--                        &lt;!&ndash;                </figure>&ndash;&gt;-->
+
+<!--                        <div class="skill_images">-->
+<!--                            <img src="../img/php.png" alt="PHP" height="100" width="100">-->
+<!--                            <span class="caption">PHP</span>-->
+<!--                        </div>-->
+
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="skill_section">-->
+<!--                <h1>Non Programming</h1>-->
+<!--                <br>-->
+<!--                <br>-->
+<!--                <h6>2. Office Apps</h6>-->
+
+<!--                <div class="item">-->
+<!--                    <div class="skill_images">-->
+<!--                        <img src="../img/iconfinder_logo_brand_brands_logos_word_2993664.png" alt="MS Word" height="100" width="100">-->
+<!--                        <span class="caption">MS Word</span>-->
+<!--                    </div>-->
+
+<!--                    <div class="skill_images">-->
+<!--                        <img src="../img/iconfinder_265_Powerpoint_logo_4375048.png" alt="MS Powerpoint" height="100" width="100">-->
+<!--                        <span class="caption">MS Powerpoint</span>-->
+<!--                    </div>-->
+
+<!--                    <div class="skill_images">-->
+<!--                        <img src="../img/iconfinder_logo_brand_brands_logos_excel_2993694.png" alt="MS Excel" height="100" width="100">-->
+<!--                        <span class="caption">MS Excel</span>-->
+<!--                    </div>-->
+
+<!--                    <div class="skill_images">-->
+<!--                        <img src="../img/iconfinder_7_docs_document_file_data_google_docs_2109135.png" alt="Google Docs" height="100" width="100">-->
+<!--                        <span class="caption">Google Docs</span>-->
+<!--                    </div>-->
+
+<!--                    <div class="skill_images">-->
+<!--                        <img src="../img/iconfinder_9_sheet_data_spreadsheets_file_google_sheets_2109137.png" alt="Google Sheets" height="100" width="100">-->
+<!--                        <span class="caption">Google Sheets</span>-->
+<!--                    </div>-->
+
+<!--                    <div class="skill_images">-->
+<!--                        <img src="../img/iconfinder_logo_brand_brands_logos_google_slides_2993687.png" alt="Google Slides" height="100" width="100">-->
+<!--                        <span class="caption">Google Slides</span>-->
+<!--                    </div>-->
+
+<!--                </div>-->
+
+
+
+
+
+
+
+
+<!--                <br>-->
+<!--                <h6>3. Editing</h6>-->
+
+<!--                <div class="skill_images">-->
+<!--                    <img src="../img/iconfinder_Premiere_pro_2529523.png" alt="Adobe Premiere Pro" height="100" width="100">-->
+<!--                    <span class="caption">Adobe Premiere Pro</span>-->
+<!--                </div>-->
+
+
+<!--                <br>-->
+<!--                <br>-->
+<!--                <h6>4. Diagramming (Draw.io)</h6>-->
+<!--                <br>-->
+<!--                <h6>5. Prototyping (Proto.io, Balsamiq)</h6>-->
+<!--                <br>-->
+<!--                <h6>6. Project Management Tools</h6>-->
+
+<!--                <div class="skill_images">-->
+<!--                    <img src="../img/iconfinder_184_Jira_logo_logos_4373216.png" alt="Jira" height="100" width="100">-->
+<!--                    <span class="caption">Jira</span>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
 
 
 
 
         <br>
-        <h6>3. Editing</h6>
-
-        <div class="skill_images">
-            <img src="../img/iconfinder_Premiere_pro_2529523.png" alt="Adobe Premiere Pro" height="100" width="100">
-            <span class="caption">Adobe Premiere Pro</span>
-        </div>
 
 
-        <br>
-        <br>
-        <h6>4. Diagramming (Draw.io)</h6>
-        <br>
-        <h6>5. Prototyping (Proto.io, Balsamiq)</h6>
-        <br>
-        <h6>6. Project Management Tools</h6>
 
-        <div class="skill_images">
-            <img src="../img/iconfinder_184_Jira_logo_logos_4373216.png" alt="Jira" height="100" width="100">
-            <span class="caption">Jira</span>
-        </div>
+
+
+
 
 
 
@@ -378,11 +525,11 @@
 
     </div>
 
-    <hr>
+
     <div class="Contact" id="Contact">
         <h1>Contact</h1>
         <hr class="headers">
-        <p class="contact-desc">If you want to know more about me, please free to drop a message in any of my social media platforms</p>
+        <p class="contact-desc">If you want to know more about me, please feel free to drop a message in any of my social media platforms</p>
 
 
 <!--        <div class="clearfix contact-linkedin">-->
@@ -395,17 +542,28 @@
 <!--            <p>harizm71@gmail.com</p>-->
 <!--        </div>-->
 
-        <div class="row">
-            <div class="column">
-                <img src="../img/linkedin.png" alt="LinkedIn" height="30" width="30">
-                <a href="https://www.linkedin.com/in/harizm98/">harizm98</a>
-            </div>
+<!--        <div class="row">-->
+<!--            <div class="column">-->
+<!--                <img src="../img/linkedin.png" alt="LinkedIn" height="30" width="30">-->
+<!--                <a href="https://www.linkedin.com/in/harizm98/">harizm98</a>-->
+<!--            </div>-->
 
 
-            <div class="column">
-                <img src="../img/gmail.png" alt="Gmail" height="30" width="30">
-                <a href="mailto:harizm71@gmail.com">harizm71@gmail.com</a>
-            </div>
+<!--            <div class="column">-->
+<!--                <img src="../img/gmail.png" alt="Gmail" height="30" width="30">-->
+<!--                <a href="mailto:harizm71@gmail.com">harizm71@gmail.com</a>-->
+<!--            </div>-->
+<!--        </div>-->
+
+
+        <div class="contact1">
+            <img src="../img/linkedin.png" alt="LinkedIn" height="30" width="30">
+            <a href="https://www.linkedin.com/in/harizm98/">harizm98</a>
+        </div>
+
+        <div class="contact2">
+            <img src="../img/gmail.png" alt="Gmail" height="30" width="30">
+            <a href="mailto:harizm71@gmail.com">harizm71@gmail.com</a>
         </div>
 
 

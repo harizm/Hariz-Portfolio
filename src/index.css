@@ -5,15 +5,20 @@ html{
 }
 
 body{
-    background-color: #88BDBC;
+    background-color: #FFFFFF;
 
 }
+
+.nav-link{
+    color: #FFFFFF;
+}
+
 
 /*.header{*/
 /*    padding-bottom: 10px;*/
 /*}*/
 .Content{
-    background-color: #88BDBC;
+    background-color: #FFFFFF;
     padding-top: 118px;
 }
 
@@ -36,6 +41,30 @@ h1 {
     width: 50%;
 }
 
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 630px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+div.skill_images{
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    padding: 20px;
+}
+
 h6{
     text-align: center;
 }
@@ -46,6 +75,11 @@ h6.skill-title{
     padding-bottom: 20px;
     border-bottom: 1px solid #ddd;
     font-size: 1.28rem ;
+}
+
+
+h6.skills-header{
+    font-size: 1.1em
 }
 
 
@@ -76,8 +110,10 @@ p{
 
 
 .Home{
-    margin-top: 30px;
+    margin-top: -5px;
+    margin-bottom: 30px;
     padding: 1.5em 8.5em;
+    background-color: #007bff;
 
     /*background-color: #88BDBC*/
 }
@@ -96,6 +132,7 @@ p{
 
 .welcome_note{
     text-align: left;
+    color: white;
 }
 
 .About{
@@ -107,8 +144,10 @@ p{
     /*padding-right: 6.5em;*/
 
     padding: 1.5em 8.5em;
-    margin-top: 2em;
     margin-bottom: 2em;
+    margin-top: -2em;
+    background-color: #f2d8d7;
+
 }
 
 .about_me{
@@ -118,25 +157,49 @@ p{
 
 .Experience{
     padding: 1.5em 8.5em;
-    margin-top: 2em;
+    margin-top: -2em;
     margin-bottom: 2em;
+    background-color: #f9f9f9;
 }
 
 .Education{
     padding: 1.5em 8.5em;
-    margin-top: 2em;
+    margin-top: -2em;
     margin-bottom: 2em;
+    background-color: #f2d8d7;
 }
 
 
 .Skills{
     text-align: center;
     padding: 1.5em 8.5em;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: -2em;
+    background-color: #f9f9f9;
 
 }
 
+.programming_skills{
+    background: blue;
+}
+
+.non-programming_skills{
+    background: blue;
+}
+
+.skill_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 793px;
+    grid-column-gap: 50px;
+}
+
+.skill_section{
+    background-color: #88BDBC;
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: -100px;
+}
 
 .container{
     display: grid;
@@ -147,19 +210,18 @@ p{
 
 .item{
     background: #FFFFFF;
+    border-radius: 25px;
+    padding: 10px;
 }
+
+
 
 
 .skill-content{
     padding: 20px;
     /*border-radius: 0 0 2px 2px;*/
 }
-div.skill_images{
-    vertical-align: top;
-    display: inline-block;
-    text-align: center;
-    width: 120px;
-}
+
 
 .caption{
     display: block;
@@ -169,7 +231,8 @@ div.skill_images{
 .Contact{
     text-align: center;
     padding: 1.5em 8.5em;
-    margin-top: 2em;
+    margin-top: -2em;
+    background-color: #f2d8d7;
 }
 
 .contact-linkedin > * {
@@ -186,33 +249,49 @@ div.skill_images{
     font-size: 1.5em;
 }
 
-.column {
-    /*float: left;*/
-    text-align: center;
-    width: 50%;
-    padding: 10px;
-    /*height: 100px;*/
+/*.column_contact {*/
+/*    !*float: left;*!*/
+/*    text-align: center;*/
+/*    width: 50%;*/
+/*    padding: 10px;*/
+/*    !*height: 100px;*!*/
+/*}*/
+
+/*!* Clear floats after the columns *!*/
+/*.row_contact:after {*/
+/*    content: "";*/
+/*    display: table;*/
+/*    clear: both;*/
+/*}*/
+
+.contact1{
+    display: inline-block;
+    padding: 20px;
 }
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.contact2{
+    display: inline-block;
+    padding: 20px;
 }
 
 
 footer{
     /*position: fixed;*/
     text-align: center;
-    background-color: #777;
+    background-color: #007bff;
     padding: 10px;
+}
+
+
+footer > p{
+    color: white;
 }
 
 
 .home{
     font-size: 2em;
     text-align: left;
+    color: white;
 }
 
 #hariz_profile{
@@ -261,7 +340,7 @@ footer{
     content: '';
     position: absolute;
     width: 6px;
-    background-color: white;
+    background-color: #88BDBC;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -284,7 +363,7 @@ footer{
     width: 25px;
     height: 25px;
     right: -17px;
-    background-color: white;
+    background-color: #88BDBC;
     border: 4px solid #FF9F55;
     top: 15px;
     border-radius: 50%;
@@ -306,7 +385,7 @@ footer{
     width: 25px;
     height: 25px;
     right: -17px;
-    background-color: white;
+    background-color: #88BDBC;
     border: 4px solid #FF9F55;
     top: 15px;
     border-radius: 50%;
@@ -334,9 +413,9 @@ footer{
     width: 0;
     z-index: 1;
     right: 30px;
-    border: medium solid white;
+    border: medium solid #88BDBC;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
+    border-color: transparent transparent transparent #88BDBC;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -348,9 +427,9 @@ footer{
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid white;
+    border: medium solid #88BDBC;
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent #88BDBC transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -360,6 +439,14 @@ footer{
 
 /* The actual education_content */
 .content {
+    padding: 20px 30px;
+    background-color: #88BDBC;
+    position: relative;
+    border-radius: 6px;
+}
+
+
+.education_content{
     padding: 20px 30px;
     background-color: white;
     position: relative;
@@ -385,9 +472,9 @@ footer{
     /* Make sure that all arrows are pointing leftwards */
     .education_container::before {
         left: 60px;
-        border: medium solid white;
+        border: medium solid #88BDBC;
         border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
+        border-color: transparent #88BDBC transparent transparent;
     }
 
     /* Make sure all circles are at the same spot */
