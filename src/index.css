@@ -36,7 +36,8 @@ h1 {
 /*    padding: 20px 40px;*/
 /*}*/
 
-.headers{
+
+.headers_line{
     border-top: 5px solid blue;
     width: 50%;
 }
@@ -247,6 +248,7 @@ p{
 
 .contact-desc{
     font-size: 1.5em;
+    margin: 0 -4em;
 }
 
 /*.column_contact {*/
@@ -404,33 +406,36 @@ footer > p{
     left: 50%;
 }
 
-/* Add arrows to the left container (pointing right) */
-.left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid #88BDBC;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #88BDBC;
+@media screen and (min-width: 830px){
+    /* Add arrows to the left container (pointing right) */
+    .left::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        right: 30px;
+        border: medium solid #88BDBC;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent #88BDBC;
+    }
+
+    /* Add arrows to the right container (pointing left) */
+    .right::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        left: 30px;
+        border: medium solid #88BDBC;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #88BDBC transparent transparent;
+    }
 }
 
-/* Add arrows to the right container (pointing left) */
-.right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid #88BDBC;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent #88BDBC transparent transparent;
-}
 
 /* Fix the circle for containers on the right side */
 .right::after {
@@ -453,16 +458,182 @@ footer > p{
     border-radius: 6px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 768px){
+    .content{
+        padding: 20px 85px;
+        background-color: #88BDBC;
+        position: relative;
+        border-radius: 6px;
+    }
+
+    .education_content{
+        padding: 20px 85px;
+        background-color: white;
+        position: relative;
+        border-radius: 6px;
+    }
 
 
+    div.content > p{
+        font-size: 0.8rem;
+        margin: 0em -6em;
+    }
+
+    div.education_content > p{
+        font-size: 0.8rem;
+        margin: 0em -6em;
+    }
+
+
+    div.content > h2{
+        font-size: 1.5rem;
+        margin: 0em -3em;
+    }
+
+
+    div.education_content > h2{
+        font-size: 1.5rem;
+        margin: 0em -3em;
+    }
+
+    div.content > h4{
+        font-size: 1rem;
+        margin: 0em -4.5em;
+    }
+
+    div.education_content > h4{
+        font-size: 1rem;
+        margin: 0em -4.5em;
+    }
+
+
+}
+@media screen and (min-width: 320px) and (max-width: 560px){
+        div.column > h2{
+            font-size: 1.0rem;
+        }
+
+        div.row{
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -97px;
+            margin-left: -94px;
+        }
+
+        div.column{
+            float: left;
+            width: 50%;
+            padding: 10px;
+            height: 1494px;
+        }
+
+
+        /*div.Skills{*/
+        /*    text-align: center;*/
+        /*    padding: 1.5em 8.5em;*/
+        /*    margin-top: -2em;*/
+        /*    margin-right: -3.2em;*/
+        /*    background-color: #f9f9f9*/
+        /*}*/
+}
+
+@media screen and (min-width: 561px) and (max-width: 771px){
+    div.column > h2{
+        font-size: 1.2rem;
+    }
+
+    div.column{
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 1494px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1020px){
+    div.column{
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 1010px;
+    }
+}
+
+/*@media screen and (min-width: 600px) and (max-width: 770px){*/
+/*    div.row{*/
+/*        display: flex;*/
+/*        flex-wrap: wrap;*/
+/*        margin-right: -97px;*/
+/*        margin-left: -94px;*/
+/*    }*/
+
+/*    div.column{*/
+/*        float: left;*/
+/*        width: 50%;*/
+/*        padding: 10px;*/
+/*        height: 1494px;*/
+/*    }*/
+/*}*/
+
+
+@media screen and (min-width: 320px) and (max-width: 420px){
+    .about_me{
+        margin: 0em -6em;
+    }
+}
+
+/*@media screen and (min-width: 320px) and (max-width: 768px){*/
+/*    .row{*/
+/*        margin-right: -97px;*/
+/*        margin-left: -94px;*/
+/*    }*/
+/*}*/
+
+@media screen and (min-width: 425px) and (max-width: 767px){
+    .About{
+        padding: 1.5em 2.5em;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 420px){
+
+    .Home{
+        margin-right: -3.2em;
+    }
+
+    .About{
+        margin-right: -3.2em;
+    }
+
+    .Experience{
+        margin-right: -3.2em;
+    }
+
+    .Education{
+        margin-right: -3.2em;
+    }
+
+    .Skills{
+        margin-right: -3.2em;
+    }
+
+    .Contact{
+        margin-right: -3.2em;
+    }
+
+    footer{
+        margin-right: -3.2em;
+    }
+
+
+}
 /* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 320px) and (max-width: 830px) {
     /* Place the timelime to the left */
     .timeline::after {
         left: 31px;
     }
 
-    /*!* Full-width containers *!*/
+    /*/* Full-width containers */*/
     .education_container {
         width: 100%;
         padding-left: 70px;
@@ -470,12 +641,12 @@ footer > p{
     }
 
     /* Make sure that all arrows are pointing leftwards */
-    .education_container::before {
-        left: 60px;
-        border: medium solid #88BDBC;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent #88BDBC transparent transparent;
-    }
+    /*.education_container::before {*/
+    /*    left: 60px;*/
+    /*    border: medium solid #88BDBC;*/
+    /*    border-width: 10px 10px 10px 0;*/
+    /*    border-color: transparent #88BDBC transparent transparent;*/
+    /*}*/
 
     /* Make sure all circles are at the same spot */
     .left::after, .right::after {
@@ -487,4 +658,225 @@ footer > p{
         left: 0%;
     }
 
+    h1{
+        font-size: 2.0rem ;
+    }
+
+    .about_me{
+        font-size: 1.0rem;
+    }
+
+    h1.headers{
+        font-size: 2.0rem;
+    }
+    div.education_content > h2{
+        font-size: 1.5rem;
+    }
+
+    div.education_content > h4 {
+        font-size: 1rem;
+    }
+
+    div.education_content > p{
+        font-size: 0.8rem;
+    }
+
+    div.content > h2{
+        font-size: 1.5rem;
+    }
+
+    div.content > h4 {
+        font-size: 1rem;
+    }
+
+    div.content > p{
+        font-size: 0.8rem;
+    }
+
+
 }
+
+@media screen and (max-width: 1000px){
+    img.img_skill{
+        max-width: 100%;
+        height: auto;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 590px){
+    #hariz_proImage{
+        float: right;
+        border-radius: 15px;
+        border: 10px solid black;
+        width: 10em;
+    }
+
+    div.Intro{
+        margin: 0 -7em;
+        overflow: auto;
+    }
+
+    h1.welcome_note{
+        font-size: 1.5em;
+    }
+
+    .home{
+        font-size: 1.0em;
+    }
+
+
+}
+
+
+@media screen and (min-width: 590px) and (max-width: 740px){
+
+    #hariz_proImage{
+        float: right;
+        border-radius: 15px;
+        border: 10px solid black;
+        width: 10em;
+    }
+
+    h1.welcome_note{
+        font-size: 1.5em;
+    }
+
+    .home{
+        font-size: 1.0em;
+    }
+
+
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 576px){
+    .Home{
+        margin-top: 122px;
+        margin-bottom: 24px;
+        padding: 1.5em 8.5em;
+        background-color: #007bff;
+    }
+}
+
+
+@media screen and (min-width: 740px) and (max-width: 765px){
+    h1.welcome_note{
+        font-size: 2.0em;
+    }
+
+    .home{
+        font-size: 1.5em;
+    }
+
+    #hariz_proImage{
+        float: right;
+        border-radius: 15px;
+        border: 10px solid black;
+        width: 15em;
+    }
+}
+
+@media screen and (min-width: 765px) and (max-width: 850px){
+    #hariz_proImage{
+        float: right;
+        border-radius: 15px;
+        border: 10px solid black;
+        width: 15em;
+    }
+
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 650px){
+    .navbar-nav > li {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+
+@media screen and (min-width: 650px) and (max-width: 680px){
+    .navbar-nav > li {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+@media screen and (min-width: 680px) and (max-width: 800px)  {
+    .navbar-nav > li {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 900px)  {
+    .navbar-nav > li {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 771px) and (max-width: 830px){
+    .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 1000px;
+    }
+}
+@media screen and (min-width: 830px) and (max-width: 1000px){
+    .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 1000px;
+    }
+
+    #hariz_proImage{
+        float: right;
+        border-radius: 15px;
+        border: 10px solid black;
+        width: 17em;
+    }
+
+    div.education_content > h2{
+        font-size: 1.5rem;
+    }
+
+    div.education_content > h4 {
+        font-size: 1rem;
+    }
+
+    div.education_content > p{
+        font-size: 0.8rem;
+    }
+
+    div.content > h2{
+        font-size: 1.5rem;
+    }
+
+    div.content > h4 {
+        font-size: 1rem;
+    }
+
+    div.content > p{
+        font-size: 0.8rem;
+    }
+
+    /*.h1{*/
+    /*    font-size: 2.0rem ;*/
+    /*}*/
+
+}
+
+
+
+
+
+
