@@ -4,19 +4,171 @@ html{
     /*this is to make smooth scrolling effect when clicking certain navigation link*/
 }
 
+:root{
+    --color-1:#0082e6;
+}
+
 body{
     background-color: #FFFFFF;
 
 }
 
-.nav-link{
-    color: #FFFFFF;
+nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active, a:hover{
+    background: #1b9bff;
+    transition: .5s;
+}
+
+.checkbtn{
+     height: 34px;
+        width: 44px;
+        background-color: #ffffff;
+        border-radius: 4px;
+        cursor: pointer;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
 }
 
 
-/*.header{*/
-/*    padding-bottom: 10px;*/
-/*}*/
+.checkbtn span{
+    display: block;
+    height: 2px;
+    width: 20px;
+    background-color: var(--color-1);
+    position: relative;
+}
+
+.checkbtn span::before,
+.checkbtn span::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-1);
+    left: 0;
+
+}
+
+.checkbtn span::before{
+    top: -6px;
+}
+
+.checkbtn span::after{
+    top: 6px;
+}
+
+#check{
+    display: none;
+}
+
+
+@media (max-width: 952px){
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: flex;
+    }
+
+    #check:checked ~ .nav{
+            opacity: 1;
+            visibility: visible;
+        }
+
+      #check:focus ~ .checkbtn{
+            box-shadow: 0 0 15px #000000;
+        }
+
+
+       #check:checked ~ .checkbtn span{
+            background-color: transparent;
+        }
+
+        #check:checked ~ .checkbtn span::before{
+            top: 0;
+            transform: rotate(45deg);
+        }
+
+         #check:checked ~ .checkbtn span::after{
+            top: 0;
+            transform: rotate(-45deg);
+        }
+
+    ul{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+
+    a:hover, a.active{
+        background: none;
+        color: #0082e6;
+    }
+
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
 .Content{
     background-color: #FFFFFF;
     padding-top: 118px;
@@ -26,16 +178,6 @@ h1 {
     font-family: 'Lato', sans-serif;
     text-align: center;
 }
-
-
-/* this is to style h1 tag for each page section*/
-/*.header_section{*/
-/*    font-family: 'Lato', sans-serif;*/
-/*    text-align: center;*/
-/*    background-color: #909090;*/
-/*    padding: 20px 40px;*/
-/*}*/
-
 
 .headers_line{
     border-top: 5px solid blue;
@@ -86,15 +228,10 @@ h6.skills-header{
 
 p{
     font-family: Roboto;
-    /*text-align: center;*/
     font-size: 1.2rem;
 }
 
-.nav-link{
-    font-size: 1.5em;
 
-
-}
 
 @media all and (max-width: 768px){
     .nav-link{
@@ -111,18 +248,14 @@ p{
 
 
 .Home{
-    margin-top: -5px;
+    margin-top: -38px;
     margin-bottom: 30px;
-    padding: 1.5em 8.5em;
+    padding: 8.5em 8.5em;
     background-color: #007bff;
-
-    /*background-color: #88BDBC*/
 }
 
 .Intro{
     margin: 0 auto;
-
-    /*overflow: auto makes sures the div follows the size of the image */
     overflow: auto;
 }
 
@@ -137,14 +270,7 @@ p{
 }
 
 .About{
-    /*padding: 1.5em;*/
-
-    /*padding-top: 1.5em;*/
-    /*padding-bottom: 1.5em;*/
-    /*padding-left: 6.5em;*/
-    /*padding-right: 6.5em;*/
-
-    padding: 1.5em 8.5em;
+    padding: 7.5em 8.5em;
     margin-bottom: 2em;
     margin-top: -2em;
     background-color: #f2d8d7;
@@ -157,14 +283,14 @@ p{
 }
 
 .Experience{
-    padding: 1.5em 8.5em;
+    padding: 7.5em 8.5em;
     margin-top: -2em;
     margin-bottom: 2em;
     background-color: #f9f9f9;
 }
 
 .Education{
-    padding: 1.5em 8.5em;
+    padding: 7.5em 8.5em;
     margin-top: -2em;
     margin-bottom: 2em;
     background-color: #f2d8d7;
@@ -173,7 +299,7 @@ p{
 
 .Skills{
     text-align: center;
-    padding: 1.5em 8.5em;
+    padding: 7.5em 8.5em;
     margin-top: -2em;
     background-color: #f9f9f9;
 
@@ -220,7 +346,6 @@ p{
 
 .skill-content{
     padding: 20px;
-    /*border-radius: 0 0 2px 2px;*/
 }
 
 
@@ -251,21 +376,6 @@ p{
     margin: 0 -4em;
 }
 
-/*.column_contact {*/
-/*    !*float: left;*!*/
-/*    text-align: center;*/
-/*    width: 50%;*/
-/*    padding: 10px;*/
-/*    !*height: 100px;*!*/
-/*}*/
-
-/*!* Clear floats after the columns *!*/
-/*.row_contact:after {*/
-/*    content: "";*/
-/*    display: table;*/
-/*    clear: both;*/
-/*}*/
-
 .contact1{
     display: inline-block;
     padding: 20px;
@@ -278,7 +388,6 @@ p{
 
 
 footer{
-    /*position: fixed;*/
     text-align: center;
     background-color: #007bff;
     padding: 10px;
@@ -300,8 +409,6 @@ footer > p{
     border-radius: 50%;
     width: 20em;
     height: 20em;
-
-    /*to make image center*/
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -309,21 +416,13 @@ footer > p{
 }
 
 #hariz_proImage{
-    /*this is to make the image center*/
-    /*display: block;*/
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
     float: right;
     /*to have rounded corners for rectangular image*/
     border-radius: 15px;
     border: 10px solid black;
     width: 20em;
     /*how to make image to be at the right, but inside div*/
-
-
-
 }
-
 
 .user_profile{
     margin-left:50%
@@ -459,6 +558,12 @@ footer > p{
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px){
+    .Home{
+    margin-bottom: 30px;
+    padding: 1.5em 8.5em;
+    background-color: #007bff;
+    }
+
     .content{
         padding: 20px 85px;
         background-color: #88BDBC;
@@ -526,15 +631,6 @@ footer > p{
             padding: 10px;
             height: 1494px;
         }
-
-
-        /*div.Skills{*/
-        /*    text-align: center;*/
-        /*    padding: 1.5em 8.5em;*/
-        /*    margin-top: -2em;*/
-        /*    margin-right: -3.2em;*/
-        /*    background-color: #f9f9f9*/
-        /*}*/
 }
 
 @media screen and (min-width: 561px) and (max-width: 771px){
@@ -559,41 +655,55 @@ footer > p{
     }
 }
 
-/*@media screen and (min-width: 600px) and (max-width: 770px){*/
-/*    div.row{*/
-/*        display: flex;*/
-/*        flex-wrap: wrap;*/
-/*        margin-right: -97px;*/
-/*        margin-left: -94px;*/
-/*    }*/
-
-/*    div.column{*/
-/*        float: left;*/
-/*        width: 50%;*/
-/*        padding: 10px;*/
-/*        height: 1494px;*/
-/*    }*/
-/*}*/
-
-
 @media screen and (min-width: 320px) and (max-width: 420px){
     .about_me{
         margin: 0em -6em;
     }
 }
 
-/*@media screen and (min-width: 320px) and (max-width: 768px){*/
-/*    .row{*/
-/*        margin-right: -97px;*/
-/*        margin-left: -94px;*/
-/*    }*/
-/*}*/
+@media screen and (min-width: 425px) and (max-width: 768px){
 
-@media screen and (min-width: 425px) and (max-width: 767px){
-    .About{
-        padding: 1.5em 2.5em;
+    .Home{
+        margin-bottom: 30px;
+        padding: 7.5em 8.5em;
+        background-color: #007bff;
     }
+
+    .About{
+        padding: 7.5em 8.5em;
+        margin-bottom: 2em;
+        margin-top: -2em;
+        background-color: #f2d8d7;
+    }
+
+    .Experience{
+        padding-top: 7.5em;
+        padding-left: 8.5em;
+        padding-right: 8.5em;
+        margin-top: -2em;
+        margin-bottom: 2em;
+        background-color: #f9f9f9;
+    }
+
+
+    .Education{
+        padding: 7.5em 8.5em;
+        margin-top: -2em;
+        margin-bottom: 2em;
+        background-color: #f2d8d7;
+    }
+
+
+    .Skills{
+        text-align: center;
+        padding: 7.5em 8.5em;
+        margin-top: -2em;
+        background-color: #f9f9f9;
+    }
+
 }
+
+
 @media screen and (min-width: 320px) and (max-width: 420px){
 
     .Home{
@@ -633,20 +743,12 @@ footer > p{
         left: 31px;
     }
 
-    /*/* Full-width containers */*/
+    /*/* Full-width containers */
     .education_container {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
     }
-
-    /* Make sure that all arrows are pointing leftwards */
-    /*.education_container::before {*/
-    /*    left: 60px;*/
-    /*    border: medium solid #88BDBC;*/
-    /*    border-width: 10px 10px 10px 0;*/
-    /*    border-color: transparent #88BDBC transparent transparent;*/
-    /*}*/
 
     /* Make sure all circles are at the same spot */
     .left::after, .right::after {
@@ -749,17 +851,6 @@ footer > p{
 
 }
 
-
-@media screen and (min-width: 320px) and (max-width: 576px){
-    .Home{
-        margin-top: 122px;
-        margin-bottom: 24px;
-        padding: 1.5em 8.5em;
-        background-color: #007bff;
-    }
-}
-
-
 @media screen and (min-width: 740px) and (max-width: 765px){
     h1.welcome_note{
         font-size: 2.0em;
@@ -786,41 +877,6 @@ footer > p{
     }
 
 }
-
-
-@media screen and (min-width: 600px) and (max-width: 650px){
-    .navbar-nav > li {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-}
-
-
-@media screen and (min-width: 650px) and (max-width: 680px){
-    .navbar-nav > li {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-}
-
-
-@media screen and (min-width: 680px) and (max-width: 800px)  {
-    .navbar-nav > li {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-}
-
-@media screen and (min-width: 800px) and (max-width: 900px)  {
-    .navbar-nav > li {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-}
-
-
-
 
 @media screen and (min-width: 771px) and (max-width: 830px){
     .column {
@@ -869,8 +925,6 @@ footer > p{
         font-size: 0.8rem;
     }
 
-    /*.h1{*/
-    /*    font-size: 2.0rem ;*/
-    /*}*/
+
 
 }
